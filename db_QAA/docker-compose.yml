@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+    mariadb_10.1_QAA:
+        image: mariadb:10.1
+        container_name: mariadb_10.1_QAA
+        environment:
+         - MYSQL_ROOT_PASSWORD=tetraroot
+         - MYSQL_DATABASE=rigspace
+        volumes:
+         - "./conf_qa.cnf:/etc/mysql/conf.d/conf_qa.cnf"
+         - "./mysql:/var/lib/mysql"
+        restart: always
+        ports:
+         - "33069:3306"

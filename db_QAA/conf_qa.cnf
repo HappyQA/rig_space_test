@@ -1,0 +1,5 @@
+[mysqld]
+max_connections		= 1024
+default_storage_engine	= InnoDB
+character_set_server	= utf8
+max_allowed_packet	= 64M
