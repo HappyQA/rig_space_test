@@ -183,7 +183,7 @@ public class CRUDSecurityGroupTest extends BaseTest {
 
 @Tag - Тэги групп автотестов используемых в maven-surefire-plugin (test - suites);
 
-@Test - Тэг для определения JUnit фреймворком что данный тест - является тестом (улыбка)
+@Test - Тэг для определения JUnit фреймворком что данный тест - является тестом
 
 @Description - подробное описание проводимого теста;
 
